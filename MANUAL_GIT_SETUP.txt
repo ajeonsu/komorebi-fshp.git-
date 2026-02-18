@@ -1,0 +1,32 @@
+═══════════════════════════════════════════════════════════════
+MANUAL GITHUB SETUP FOR KOMOREBI
+═══════════════════════════════════════════════════════════════
+
+STEP 1: Create GitHub Repository
+---------------------------------
+1. Go to: https://github.com/new
+2. Name: komorebi-fshp
+3. DO NOT initialize with README
+4. Click "Create repository"
+
+STEP 2: Push Code to GitHub
+---------------------------------
+Run these commands in PowerShell:
+
+cd "c:\work in rapture.inc\website building, domain configurations\004. komorebi.fshp.jp"
+
+git remote add origin https://github.com/YOUR-USERNAME/komorebi-fshp.git
+git branch -M main
+git push -u origin main
+
+STEP 3: Connect Vercel to GitHub
+---------------------------------
+1. Go to: https://vercel.com/adrian-james-magisas-projects/komorebi-fshp/settings/git
+2. Click "Connect Git Repository"
+3. Select your GitHub account
+4. Select repository: komorebi-fshp
+5. Click "Connect"
+
+DONE! Future commits will auto-deploy to Vercel.
+
+═══════════════════════════════════════════════════════════════
